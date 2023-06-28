@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  
+  <div>
+    <p>
+      <%= mensaje %>
+    </p>
+    <a href="/crear-usuario">Crear Usuario</a> <br>
+    <a href="/actualizar-usuario">Editar usuario</a> <br>
+    <a onclick="borrarUsuario()">Eliminiar usuario</a> <br>
+
+    <!--Mostrar un usuario-->
+    <h2>Buscar un usuario</h2>
+    <form action="mostrar-usuario" method="get">
+      <input type="text" name="Email">
+      <input type="submit" value="buscar un usuario">
+    </form>
+</body>
+
+</html>

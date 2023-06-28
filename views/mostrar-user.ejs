@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <h1>Editar <%= title %></h1>
+    <div>
+        <h1> <%=title%></h1>
+        <p>Usuario: <%= usuario %></p>
+
+        <!--Editar usuario-->
+        <form action="/actualizar-usuario" method="get">
+            <input type="text" name="email" value="<%=title%>">
+            <input type="submit" value="Editar usuario">
+        </form>
+        
+        <!--borrar usuario-->
+        <form action="/borrar-usuario" method="POST">
+            <input type="text" name="email" value="<%=title%>">
+            <input type="submit" onclick='alert("seguro que desea eliminarlo?")' value="borrar usuario">
+        </form>
+    </div>
+</body>
+</html>
